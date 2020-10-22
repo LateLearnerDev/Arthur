@@ -1,0 +1,8 @@
+C:\Arthur\.mono\temp\bin\Debug\ArthurProject.dll
+C:\Arthur\.mono\temp\bin\Debug\ArthurProject.pdb
+C:\Arthur\.mono\temp\obj\Debug\ArthurProject.csprojAssemblyReference.cache
+C:\Arthur\.mono\temp\obj\Debug\ArthurProject.AssemblyInfoInputs.cache
+C:\Arthur\.mono\temp\obj\Debug\ArthurProject.AssemblyInfo.cs
+C:\Arthur\.mono\temp\obj\Debug\ArthurProject.csproj.CoreCompileInputs.cache
+C:\Arthur\.mono\temp\obj\Debug\ArthurProject.dll
+C:\Arthur\.mono\temp\obj\Debug\ArthurProject.pdb

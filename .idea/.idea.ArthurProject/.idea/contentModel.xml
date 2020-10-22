@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Arthur" t="IncludeRecursive">
+      <e p=".mono" t="Include">
+        <e p="temp" t="Include">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="ArthurProject.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="ArthurProject.csproj" t="IncludeRecursive" />
+      <e p="ArthurProject.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Scripts" t="Include">
+        <e p="Arthur.cs" t="Include" />
+      </e>
+      <e p="Vector2Extensions.cs" t="Include" />
+    </e>
+    <e p="C:\Users\rlpov\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rlpov\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_ArthurProject.1524780630.00" t="ExcludeRecursive" />
+  </component>
+</project>
