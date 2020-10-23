@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Arthur" t="IncludeRecursive">
+    <e p="C:\Users\rlpov\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rlpov\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_ArthurProject.-2127900755.00" t="ExcludeRecursive" />
+    <e p="Z:\Arthur" t="IncludeRecursive">
       <e p=".mono" t="Include">
         <e p="temp" t="Include">
           <e p="bin" t="ExcludeRecursive" />
@@ -20,7 +22,5 @@
       </e>
       <e p="Vector2Extensions.cs" t="Include" />
     </e>
-    <e p="C:\Users\rlpov\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\rlpov\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_ArthurProject.1524780630.00" t="ExcludeRecursive" />
   </component>
 </project>

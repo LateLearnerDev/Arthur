@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Arthur\\ArthurProject.csproj",
+    "projectUniqueName": "Z:\\Arthur\\ArthurProject.csproj",
     "projectName": "ArthurProject",
-    "projectPath": "C:\\Arthur\\ArthurProject.csproj",
-    "outputPath": "C:\\Arthur\\.mono\\temp\\obj\\",
+    "projectPath": "Z:\\Arthur\\ArthurProject.csproj",
+    "outputPath": "Z:\\Arthur\\.mono\\temp\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -28,6 +28,8 @@
     }
   },
   "frameworks": {
-    "net472": {}
+    "net472": {
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+    }
   }
 }
