@@ -6,3 +6,11 @@ C:\Arthur\.mono\temp\obj\Debug\ArthurProject.AssemblyInfo.cs
 C:\Arthur\.mono\temp\obj\Debug\ArthurProject.csproj.CoreCompileInputs.cache
 C:\Arthur\.mono\temp\obj\Debug\ArthurProject.dll
 C:\Arthur\.mono\temp\obj\Debug\ArthurProject.pdb
+Z:\Arthur\.mono\temp\bin\Debug\ArthurProject.dll
+Z:\Arthur\.mono\temp\bin\Debug\ArthurProject.pdb
+Z:\Arthur\.mono\temp\obj\Debug\ArthurProject.csprojAssemblyReference.cache
+Z:\Arthur\.mono\temp\obj\Debug\ArthurProject.AssemblyInfoInputs.cache
+Z:\Arthur\.mono\temp\obj\Debug\ArthurProject.AssemblyInfo.cs
+Z:\Arthur\.mono\temp\obj\Debug\ArthurProject.csproj.CoreCompileInputs.cache
+Z:\Arthur\.mono\temp\obj\Debug\ArthurProject.dll
+Z:\Arthur\.mono\temp\obj\Debug\ArthurProject.pdb

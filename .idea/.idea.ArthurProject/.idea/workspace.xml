@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4588d905-3aaa-4a50-9ef3-2c52c1775e99" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="4588d905-3aaa-4a50-9ef3-2c52c1775e99" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharpEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharpEditor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/assemblies/Debug/api_hash_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/assemblies/Debug/api_hash_cache.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/metadata/ide_messaging_meta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/Arthur.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Arthur.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/TestScene.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/TestScene.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/default_env.tres" beforeDir="false" afterPath="$PROJECT_DIR$/default_env.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/cf/d19c6db5/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/34/9706ff33/KinematicBody2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Vector2Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/3b/557d6c28/KeyList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scripts/Arthur.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -25,36 +43,39 @@
     </option>
   </component>
   <component name="ProjectId" id="1j1eG7KvV3WO1ClsMMirWjoLKuL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4588d905-3aaa-4a50-9ef3-2c52c1775e99" name="Default Changelist" comment="" />
+      <created>1603486101754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603486101754</updated>
+      <workItem from="1603486117474" duration="2837000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
-  <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-  </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#Notifications" />
     <state x="552" y="182" key="#Notifications/1920.1080/1920.1080" />

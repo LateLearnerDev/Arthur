@@ -21,10 +21,10 @@ config/icon="res://icon.png"
 
 [display]
 
-window/size/width=180
-window/size/height=164
-window/size/test_width=720
-window/size/test_height=656
+window/size/width=176
+window/size/height=160
+window/size/test_width=704
+window/size/test_height=640
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 
