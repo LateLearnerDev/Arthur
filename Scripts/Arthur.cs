@@ -4,11 +4,12 @@ namespace ArthurProject.Scripts
 {
     public class Arthur : KinematicBody2D
     {
-        private int Speed { get; set; } = 30;
+        private int Speed { get; set; } = 1500;
         private Vector2 _velocity = Vector2.Zero;
         private AnimationPlayer AnimationPlayer { get; set; }
         private AnimationTree AnimationTree { get; set; }
         private AnimationNodeStateMachinePlayback _animationState;
+        private PlayerState State { get; set; }
         
         public override void _Ready()
         {
@@ -19,10 +20,18 @@ namespace ArthurProject.Scripts
 
         public override void _PhysicsProcess(float delta)
         {
-            HandleMovement();
+            if (State == PlayerState.Move)
+                HandleMovementState(delta);
+            if (State == PlayerState.Attack)
+                HandleAttackState(delta);
         }
 
-        private void HandleMovement()
+        private void HandleAttackState(float delta)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void HandleMovementState(float delta)
         {
             var inputVector = Vector2.Zero;
             inputVector.x = Input.GetActionStrength("ui_right") - Input.GetActionStrength("ui_left");
@@ -43,8 +52,7 @@ namespace ArthurProject.Scripts
             }
 
             GD.Print(AnimationPlayer.CurrentAnimation);
-            _velocity = MoveAndSlide(_velocity);
-            
+            _velocity = MoveAndSlide(_velocity * delta);
         }
     
 

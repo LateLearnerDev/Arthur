@@ -19,6 +19,7 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Scripts" t="Include">
         <e p="Arthur.cs" t="Include" />
+        <e p="PlayerState.cs" t="Include" />
       </e>
       <e p="Vector2Extensions.cs" t="Include" />
     </e>
