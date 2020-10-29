@@ -16,7 +16,10 @@
       </e>
       <e p="ArthurProject.csproj" t="IncludeRecursive" />
       <e p="ArthurProject.sln" t="IncludeFlat" />
-      <e p="Entities" t="Include" />
+      <e p="Extensions" t="Include">
+        <e p="SpriteFramesExtensions.cs" t="Include" />
+        <e p="Vector2Extensions.cs" t="Include" />
+      </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Scripts" t="Include">
         <e p="Arthur.cs" t="Include" />
@@ -24,7 +27,6 @@
         <e p="GrassEffect.cs" t="Include" />
         <e p="PlayerState.cs" t="Include" />
       </e>
-      <e p="Vector2Extensions.cs" t="Include" />
     </e>
   </component>
 </project>

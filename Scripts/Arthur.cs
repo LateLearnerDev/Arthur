@@ -1,3 +1,4 @@
+using ArthurProject.Extensions;
 using Godot;
 
 namespace ArthurProject.Scripts

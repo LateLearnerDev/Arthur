@@ -1,6 +1,6 @@
 using Godot;
 
-namespace ArthurProject
+namespace ArthurProject.Extensions
 {
     public static class SpriteFramesExtensions
     {
