@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SimpleGrass.png-92592552e4aa4d691da23321cec4c5e3.stex"
+path="res://.import/GrassEffect.png-4269a48ee782b73c8930df426f73137c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/SimpleGrass.png"
-dest_files=[ "res://.import/SimpleGrass.png-92592552e4aa4d691da23321cec4c5e3.stex" ]
+source_file="res://Sprites/Overworld/GrassEffect.png"
+dest_files=[ "res://.import/GrassEffect.png-4269a48ee782b73c8930df426f73137c.stex" ]
 
 [params]
 

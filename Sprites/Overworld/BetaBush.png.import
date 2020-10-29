@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BetaBush.png-9dc7e1d57f845ac4dec725161b743453.stex"
+path="res://.import/BetaBush.png-ac561f634efe3b06ef9b665fbc651b95.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/BetaBush.png"
-dest_files=[ "res://.import/BetaBush.png-9dc7e1d57f845ac4dec725161b743453.stex" ]
+source_file="res://Sprites/Overworld/BetaBush.png"
+dest_files=[ "res://.import/BetaBush.png-ac561f634efe3b06ef9b665fbc651b95.stex" ]
 
 [params]
 

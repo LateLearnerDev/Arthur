@@ -22,19 +22,20 @@ namespace ArthurProject.Scripts
 
         public override void _PhysicsProcess(float delta)
         {
-            if (_state == PlayerState.Move)
-                HandleMovementState(delta);
-            if (_state == PlayerState.Attack)
-                HandleAttackState(delta);
+            
         }
 
         public override void _Process(float delta)
         {
-            
+            if (_state == PlayerState.Move)
+                HandleMovementState(delta);
+            else if (_state == PlayerState.Attack)
+                HandleAttackState();
         }
 
-        private void HandleAttackState(float delta)
+        private void HandleAttackState()
         {
+            _velocity = Vector2.Zero;
             _animationState.Travel("Attack");
         }
 
@@ -59,10 +60,10 @@ namespace ArthurProject.Scripts
                 _velocity = Vector2.Zero;
             }
 
-            GD.Print(_animationPlayer.CurrentAnimation);
+            //GD.Print(_animationPlayer.CurrentAnimation);
             _velocity = MoveAndSlide(_velocity * delta);
 
-            if (Input.IsActionPressed("attack"))
+            if (Input.IsActionJustPressed("attack"))
                 _state = PlayerState.Attack;
         }
 

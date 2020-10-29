@@ -20,19 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4588d905-3aaa-4a50-9ef3-2c52c1775e99" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/metadata/ide_messaging_meta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/ide_messaging_meta.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities/Arthur.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Arthur.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/BetaBush.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/BetaBush.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/TestScene.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/TestScene.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Arthur.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Arthur.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vector2Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vector2Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/BetaBush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/BetaBush.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/SimpleGrass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/SimpleGrass.png.import" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +51,8 @@
     <setting file="file://$PROJECT_DIR$/Scripts/PlayerState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Vector2Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scripts/Arthur.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Scripts/Grass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Scripts/GrassEffect.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,7 +60,10 @@
         <option value="$PROJECT_DIR$/Arthur.cs" />
         <option value="$PROJECT_DIR$/Scripts/PlayerState.cs" />
         <option value="$PROJECT_DIR$/Vector2Extensions.cs" />
+        <option value="$PROJECT_DIR$/Entities/Grass.cs" />
+        <option value="$PROJECT_DIR$/Scripts/GrassEffect.cs" />
         <option value="$PROJECT_DIR$/Scripts/Arthur.cs" />
+        <option value="$PROJECT_DIR$/Scripts/Grass.cs" />
       </list>
     </option>
   </component>
@@ -85,7 +95,7 @@
       <workItem from="1603486117474" duration="2837000" />
       <workItem from="1603660436027" duration="1171000" />
       <workItem from="1603921597274" duration="627000" />
-      <workItem from="1603974626439" duration="4184000" />
+      <workItem from="1603974626439" duration="14041000" />
     </task>
     <servers />
   </component>

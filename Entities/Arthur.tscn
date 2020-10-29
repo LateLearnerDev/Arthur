@@ -10,7 +10,6 @@ height = 4.12485
 [sub_resource type="Animation" id=2]
 resource_name = "AttackDown"
 length = 0.4
-loop = true
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -42,7 +41,6 @@ tracks/1/keys = {
 [sub_resource type="Animation" id=34]
 resource_name = "AttackLeft"
 length = 0.2
-loop = true
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -74,7 +72,6 @@ tracks/1/keys = {
 [sub_resource type="Animation" id=33]
 resource_name = "AttackRight"
 length = 0.2
-loop = true
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -106,7 +103,6 @@ tracks/1/keys = {
 [sub_resource type="Animation" id=3]
 resource_name = "AttackUp"
 length = 0.4
-loop = true
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -389,7 +385,7 @@ script = ExtResource( 1 )
 position = Vector2( 0.132431, -4.6027 )
 texture = ExtResource( 2 )
 hframes = 16
-frame = 12
+frame = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.111374, -0.0383701 )
