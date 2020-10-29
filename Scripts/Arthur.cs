@@ -4,31 +4,38 @@ namespace ArthurProject.Scripts
 {
     public class Arthur : KinematicBody2D
     {
-        private int Speed { get; set; } = 1500;
+        private int _speed = 1500;
         private Vector2 _velocity = Vector2.Zero;
-        private AnimationPlayer AnimationPlayer { get; set; }
-        private AnimationTree AnimationTree { get; set; }
+        private AnimationPlayer _animationPlayer;
+        private AnimationTree _animationTree;
         private AnimationNodeStateMachinePlayback _animationState;
-        private PlayerState State { get; set; }
+        private PlayerState _state;
         
         public override void _Ready()
         {
-            AnimationPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
-            AnimationTree = GetNode<AnimationTree>("AnimationTree");
-            _animationState = (AnimationNodeStateMachinePlayback) AnimationTree.Get("parameters/playback");
+            _animationPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
+            _animationTree = GetNode<AnimationTree>("AnimationTree");
+            _animationState = (AnimationNodeStateMachinePlayback) _animationTree.Get("parameters/playback");
+
+            _animationTree.Active = true;
         }
 
         public override void _PhysicsProcess(float delta)
         {
-            if (State == PlayerState.Move)
+            if (_state == PlayerState.Move)
                 HandleMovementState(delta);
-            if (State == PlayerState.Attack)
+            if (_state == PlayerState.Attack)
                 HandleAttackState(delta);
+        }
+
+        public override void _Process(float delta)
+        {
+            
         }
 
         private void HandleAttackState(float delta)
         {
-            throw new System.NotImplementedException();
+            _animationState.Travel("Attack");
         }
 
         private void HandleMovementState(float delta)
@@ -40,10 +47,11 @@ namespace ArthurProject.Scripts
 
             if (inputVector != Vector2.Zero)
             {
-                AnimationTree.Set("parameters/Idle/blend_position", inputVector);
-                AnimationTree.Set("parameters/Walk/blend_position", inputVector);
+                _animationTree.Set("parameters/Idle/blend_position", inputVector);
+                _animationTree.Set("parameters/Walk/blend_position", inputVector);
+                _animationTree.Set("parameters/Attack/blend_position", inputVector);
                 _animationState.Travel("Walk");
-                _velocity = inputVector * Speed;
+                _velocity = inputVector * _speed;
             }
             else
             {
@@ -51,10 +59,17 @@ namespace ArthurProject.Scripts
                 _velocity = Vector2.Zero;
             }
 
-            GD.Print(AnimationPlayer.CurrentAnimation);
+            GD.Print(_animationPlayer.CurrentAnimation);
             _velocity = MoveAndSlide(_velocity * delta);
-        }
-    
 
+            if (Input.IsActionPressed("attack"))
+                _state = PlayerState.Attack;
+        }
+
+        // Being called in Godot animation player.
+        private void AttackAnimationFinish()
+        {
+            _state = PlayerState.Move;
+        }
     }
 }
