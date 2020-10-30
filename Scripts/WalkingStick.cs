@@ -1,5 +1,4 @@
 using ArthurProject.Enums;
-using ArthurProject.Scripts.ArthurProject.Enums;
 using Godot;
 
 public class WalkingStick : KinematicBody2D
@@ -10,27 +9,29 @@ public class WalkingStick : KinematicBody2D
     
     public override void _Ready()
     {
-        _animationTree = GetNode<AnimationTree>("AnimationTree");
-        _animationState = (AnimationNodeStateMachinePlayback) _animationTree.Get("parameters/playback");
-        
-        _animationTree.Active = true;
-        _animationTree.Set();
+        Visible = true;
+        //_animationTree = GetNode<AnimationTree>("AnimationTree");
+        // _animationState = (AnimationNodeStateMachinePlayback) _animationTree.Get("parameters/playback");
+        // _animationTree.Active = true;
+        // _animationTree.Set("parameters/BasicAttack/blend_position", Vector2.Up);
+        //_animationState.Travel("BasicAttack");
     }
 
     public override void _Process(float delta)
     {
-        if (_state == Direction.Up)
-            HandleUpState();
-        else if (_state == Direction.Right)
-            HandleRightState();
-        else if (_state == Direction.Down)
-            HandleDownState();
-        else if (_state == Direction.Left)
-            HandleLeftState();
+        // if (_state == Direction.Up)
+        //     HandleUpState();
+        // else if (_state == Direction.Right)
+        //     HandleRightState();
+        // else if (_state == Direction.Down)
+        //     HandleDownState();
+        // else if (_state == Direction.Left)
+        //     HandleLeftState();
     }
     
-    private void OnAnimatedSpriteAnimationFinished()
+    private void OnAnimationFinished()
     {
+        GD.Print("SWORD ANIMATION END");
         QueueFree();
     }
 

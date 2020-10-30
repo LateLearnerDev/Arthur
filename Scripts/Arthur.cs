@@ -35,8 +35,14 @@ namespace ArthurProject.Scripts
 
         private void HandleAttackState()
         {
+            Attack();
             _velocity = Vector2.Zero;
             _animationState.Travel("Attack");
+            
+            // Need to figure out how to set state back to move when weapon animation is finished.
+            // May have to just have player and weapon as a single entity.
+            
+            //Attack();
         }
 
         private void HandleMovementState(float delta)

@@ -1,5 +1,4 @@
 using ArthurProject.Extensions;
-using ArthurProject.Extensions.ArthurProject.Extensions;
 using Godot;
 
 public class Grass : Node2D

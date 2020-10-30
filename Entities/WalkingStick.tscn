@@ -5,7 +5,8 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "WalkingStickDown"
-length = 0.2
+length = 0.4
+loop = true
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -30,13 +31,14 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "OnAnimatedSpriteAnimationFinished"
+"method": "OnAnimationFinished"
 } ]
 }
 
 [sub_resource type="Animation" id=2]
 resource_name = "WalkingStickLeft"
-length = 0.2
+length = 0.4
+loop = true
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -61,13 +63,14 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "OnAnimatedSpriteAnimationFinished"
+"method": "OnAnimationFinished"
 } ]
 }
 
 [sub_resource type="Animation" id=4]
 resource_name = "WalkingStickRight"
-length = 0.2
+length = 0.4
+loop = true
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -92,13 +95,14 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "OnAnimatedSpriteAnimationFinished"
+"method": "OnAnimationFinished"
 } ]
 }
 
 [sub_resource type="Animation" id=3]
 resource_name = "WalkingStickUp"
-length = 0.2
+length = 0.4
+loop = true
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -123,7 +127,7 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "OnAnimatedSpriteAnimationFinished"
+"method": "OnAnimationFinished"
 } ]
 }
 
@@ -163,6 +167,7 @@ radius = 5.21163
 height = 5.96898
 
 [node name="WalkingStick" type="KinematicBody2D"]
+visible = false
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -182,7 +187,7 @@ tree_root = SubResource( 6 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 7 )
-parameters/BasicAttack/blend_position = Vector2( -0.109185, -0.214551 )
+parameters/BasicAttack/blend_position = Vector2( -0.00173312, -0.0306501 )
 
 [node name="Area2D" type="Area2D" parent="."]
 

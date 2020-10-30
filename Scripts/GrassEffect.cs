@@ -1,4 +1,3 @@
-using ArthurProject;
 using ArthurProject.Extensions;
 using Godot;
 
