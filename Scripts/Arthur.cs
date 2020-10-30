@@ -1,3 +1,4 @@
+using ArthurProject.Enums;
 using ArthurProject.Extensions;
 using Godot;
 
@@ -7,14 +8,12 @@ namespace ArthurProject.Scripts
     {
         private int _speed = 1500;
         private Vector2 _velocity = Vector2.Zero;
-        private AnimationPlayer _animationPlayer;
         private AnimationTree _animationTree;
         private AnimationNodeStateMachinePlayback _animationState;
         private PlayerState _state;
         
         public override void _Ready()
         {
-            _animationPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
             _animationTree = GetNode<AnimationTree>("AnimationTree");
             _animationState = (AnimationNodeStateMachinePlayback) _animationTree.Get("parameters/playback");
 
@@ -61,11 +60,18 @@ namespace ArthurProject.Scripts
                 _velocity = Vector2.Zero;
             }
 
-            //GD.Print(_animationPlayer.CurrentAnimation);
             _velocity = MoveAndSlide(_velocity * delta);
 
             if (Input.IsActionJustPressed("attack"))
                 _state = PlayerState.Attack;
+        }
+        
+        private void Attack()
+        {
+            var walkingStick = ResourceLoader.Load("res://Entities/WalkingStick.tscn").GetKinematicBody2D();
+            var world = GetTree().CurrentScene;
+            world.AddChild(walkingStick);
+            walkingStick.GlobalPosition = GlobalPosition;
         }
 
         // Being called in Godot animation player.

@@ -28,7 +28,7 @@ public class GrassEffect : Node2D
 
     private void OnAnimatedSpriteAnimationFinished()
     {
-        GD.Print("Animation finished");
+        QueueFree();
     }
     
 }

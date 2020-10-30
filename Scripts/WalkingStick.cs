@@ -1,4 +1,5 @@
 using ArthurProject.Enums;
+using ArthurProject.Scripts.ArthurProject.Enums;
 using Godot;
 
 public class WalkingStick : KinematicBody2D

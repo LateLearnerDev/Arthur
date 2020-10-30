@@ -1,3 +1,5 @@
+using ArthurProject.Extensions;
+using ArthurProject.Extensions.ArthurProject.Extensions;
 using Godot;
 
 public class Grass : Node2D
@@ -7,16 +9,17 @@ public class Grass : Node2D
         
     }
 
-    public override void _Process(float delta)
+    private void CreateGrassEffect()
     {
-        if (Input.IsActionPressed("attack"))
-        {
-            var grassEffect = (ResourceLoader.Load("res://Entities/GrassEffect.tscn") as PackedScene)?.Instance() as Node2D;
-            var world = GetTree().CurrentScene;
-            world.AddChild(grassEffect);
-            grassEffect.GlobalPosition = GlobalPosition;
-            QueueFree();
-        }
-              
+        var grassEffect = ResourceLoader.Load("res://Entities/GrassEffect.tscn").GetNode2D();
+        var world = GetTree().CurrentScene;
+        world.AddChild(grassEffect);
+        grassEffect.GlobalPosition = GlobalPosition;
+    }
+
+    private void OnHurtBoxAreaEntered(Area2D area)
+    {
+        CreateGrassEffect();
+        QueueFree();
     }
 }

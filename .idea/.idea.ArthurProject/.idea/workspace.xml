@@ -20,9 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4588d905-3aaa-4a50-9ef3-2c52c1775e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SpriteFramesExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Enums/Direction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Extensions/ResourceExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/metadata/ide_messaging_meta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/ide_messaging_meta.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/Arthur.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Arthur.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/Grass.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Grass.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/TestScene.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/TestScene.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Arthur.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Arthur.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Grass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Grass.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/GrassEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/GrassEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/PlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Enums/PlayerState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +49,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Scripts/PlayerState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Vector2Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Scripts/WalkingStick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Enums/Direction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scripts/Arthur.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/61/0ab50219/PhysicsBody2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/dd/a95ce0c6/Node2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Extensions/ResourceExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/db/137c62eb/AnimatedSprite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/39/d5a31904/CollisionObject2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Extensions/SpriteFramesExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/b7/ced5cc4c/ResourceLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Enums/PlayerState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/c9/7a3b51f1/Node.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Extensions/Vector2Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/70/0c1daca0/CanvasItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/c3/a663c3ec/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scripts/Grass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scripts/GrassEffect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/db/137c62eb/AnimatedSprite.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SpriteFramesExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/ed/7eb2c4ad/KinematicBody2D.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,14 +75,25 @@
         <option value="$PROJECT_DIR$/Scripts/PlayerState.cs" />
         <option value="$PROJECT_DIR$/Vector2Extensions.cs" />
         <option value="$PROJECT_DIR$/Entities/Grass.cs" />
-        <option value="$PROJECT_DIR$/Scripts/Arthur.cs" />
-        <option value="$PROJECT_DIR$/Scripts/Grass.cs" />
         <option value="$PROJECT_DIR$/SpriteFramesExtensions.cs" />
+        <option value="$PROJECT_DIR$/Extensions/SpriteFramesExtensions.cs" />
+        <option value="$PROJECT_DIR$/Extensions/Vector2Extensions.cs" />
+        <option value="$PROJECT_DIR$/Scripts/Grass.cs" />
         <option value="$PROJECT_DIR$/Scripts/GrassEffect.cs" />
+        <option value="$PROJECT_DIR$/Scripts/Direction.cs" />
+        <option value="$PROJECT_DIR$/Enums/PlayerState.cs" />
+        <option value="$PROJECT_DIR$/Enums/Direction.cs" />
+        <option value="$PROJECT_DIR$/Entities/WalkingStick.cs" />
+        <option value="$PROJECT_DIR$/Extensions/ResourceExtensions.cs" />
+        <option value="$PROJECT_DIR$/Scripts/Arthur.cs" />
+        <option value="$PROJECT_DIR$/Scripts/WalkingStick.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1j1eG7KvV3WO1ClsMMirWjoLKuL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -83,7 +121,8 @@
       <workItem from="1603486117474" duration="2837000" />
       <workItem from="1603660436027" duration="1171000" />
       <workItem from="1603921597274" duration="627000" />
-      <workItem from="1603974626439" duration="14659000" />
+      <workItem from="1603974626439" duration="15042000" />
+      <workItem from="1604051339368" duration="8314000" />
     </task>
     <servers />
   </component>
@@ -105,14 +144,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="182" key="#Notifications" />
-    <state x="552" y="182" key="#Notifications/1920.1080/1920.1080" />
-    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
-    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.1080/1920.1080" />
-    <state x="446" y="168" key="SettingsEditor" />
-    <state x="446" y="168" key="SettingsEditor/1920.1080/1920.1080" />
-    <state x="616" y="243" key="run.anything.popup" />
-    <state x="616" y="243" key="run.anything.popup/1920.1080/1920.1080" />
+    <state x="552" y="182" key="#Notifications" timestamp="1604061844206" />
+    <state x="552" y="182" key="#Notifications/1920.1080/1920.1080" timestamp="1604061844206" />
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604061844206" />
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.1080/1920.1080" timestamp="1604061844206" />
+    <state x="446" y="168" key="SettingsEditor" timestamp="1604061844206" />
+    <state x="446" y="168" key="SettingsEditor/1920.1080/1920.1080" timestamp="1604061844206" />
+    <state x="638" y="253" width="644" height="534" key="find.popup" timestamp="1604061847082">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="638" y="253" width="644" height="534" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604061847082" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1604061844206" />
+    <state x="616" y="243" key="run.anything.popup/1920.1080/1920.1080" timestamp="1604061844206" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
