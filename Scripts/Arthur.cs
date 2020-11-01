@@ -20,11 +20,6 @@ namespace ArthurProject.Scripts
             _animationTree.Active = true;
         }
 
-        public override void _PhysicsProcess(float delta)
-        {
-            
-        }
-
         public override void _Process(float delta)
         {
             if (_state == PlayerState.Move)
@@ -38,11 +33,6 @@ namespace ArthurProject.Scripts
             Attack();
             _velocity = Vector2.Zero;
             _animationState.Travel("Attack");
-            
-            // Need to figure out how to set state back to move when weapon animation is finished.
-            // May have to just have player and weapon as a single entity.
-            
-            //Attack();
         }
 
         private void HandleMovementState(float delta)
@@ -74,10 +64,7 @@ namespace ArthurProject.Scripts
         
         private void Attack()
         {
-            var walkingStick = ResourceLoader.Load("res://Entities/WalkingStick.tscn").GetKinematicBody2D();
-            var world = GetTree().CurrentScene;
-            world.AddChild(walkingStick);
-            walkingStick.GlobalPosition = GlobalPosition;
+            
         }
 
         // Being called in Godot animation player.

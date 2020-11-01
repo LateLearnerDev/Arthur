@@ -30,7 +30,6 @@
         <e p="Arthur.cs" t="Include" />
         <e p="Grass.cs" t="Include" />
         <e p="GrassEffect.cs" t="Include" />
-        <e p="WalkingStick.cs" t="Include" />
       </e>
     </e>
   </component>
