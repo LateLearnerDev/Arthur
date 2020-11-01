@@ -37,6 +37,30 @@ tracks/1/keys = {
 "method": "AttackAnimationFinish"
 } ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("HitboxPivot:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 90.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("HitboxPivot/WalkingStickHitBox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "AttackLeft"
@@ -68,10 +92,35 @@ tracks/1/keys = {
 "method": "AttackAnimationFinish"
 } ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("HitboxPivot:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 180.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("HitboxPivot/WalkingStickHitBox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
 
 [sub_resource type="Animation" id=4]
 resource_name = "AttackRight"
 length = 0.4
+loop = true
 step = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -98,6 +147,30 @@ tracks/1/keys = {
 "args": [  ],
 "method": "AttackAnimationFinish"
 } ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("HitboxPivot:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("HitboxPivot/WalkingStickHitBox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
 }
 
 [sub_resource type="Animation" id=5]
@@ -127,6 +200,30 @@ tracks/1/keys = {
 "args": [  ],
 "method": "AttackAnimationFinish"
 } ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("HitboxPivot:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 270.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("HitboxPivot/WalkingStickHitBox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
 }
 
 [sub_resource type="Animation" id=6]
@@ -377,8 +474,8 @@ graph_offset = Vector2( 0, 35.5236 )
 [sub_resource type="AnimationNodeStateMachinePlayback" id=37]
 
 [sub_resource type="CapsuleShape2D" id=38]
-radius = 4.39405
-height = 4.03651
+radius = 5.0
+height = 6.0
 
 [node name="Arthur" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -417,10 +514,16 @@ parameters/Attack/blend_position = Vector2( -0.00661004, 0.428144 )
 parameters/Idle/blend_position = Vector2( 0, 0 )
 parameters/Walk/blend_position = Vector2( 0, 0 )
 
-[node name="HitBox" parent="." instance=ExtResource( 3 )]
+[node name="HitboxPivot" type="Position2D" parent="."]
+position = Vector2( 0, -5 )
+rotation = 1.5708
 
-[node name="CollisionShape2D" parent="HitBox" index="0"]
-position = Vector2( -0.22298, 0.148651 )
+[node name="WalkingStickHitBox" parent="HitboxPivot" instance=ExtResource( 3 )]
+position = Vector2( 10, -1 )
+
+[node name="CollisionShape2D" parent="HitboxPivot/WalkingStickHitBox" index="0"]
+position = Vector2( 0, 1.66893e-06 )
 shape = SubResource( 38 )
+disabled = true
 
-[editable path="HitBox"]
+[editable path="HitboxPivot/WalkingStickHitBox"]
