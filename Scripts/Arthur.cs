@@ -11,11 +11,13 @@ namespace ArthurProject.Scripts
         private AnimationTree _animationTree;
         private AnimationNodeStateMachinePlayback _animationState;
         private PlayerState _state;
+        private WalkingStick _walkingStickHitBox;
         
         public override void _Ready()
         {
             _animationTree = GetNode<AnimationTree>("AnimationTree");
             _animationState = (AnimationNodeStateMachinePlayback) _animationTree.Get("parameters/playback");
+            _walkingStickHitBox = GetNode<WalkingStick>("HitboxPivot/WalkingStickHitBox");
 
             _animationTree.Active = true;
         }
@@ -44,6 +46,7 @@ namespace ArthurProject.Scripts
 
             if (inputVector != Vector2.Zero)
             {
+                _walkingStickHitBox.KnockbackVector = inputVector;
                 _animationTree.Set("parameters/Idle/blend_position", inputVector);
                 _animationTree.Set("parameters/Walk/blend_position", inputVector);
                 _animationTree.Set("parameters/Attack/blend_position", inputVector);

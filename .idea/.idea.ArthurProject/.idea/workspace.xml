@@ -20,17 +20,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4588d905-3aaa-4a50-9ef3-2c52c1775e99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Scripts/Interfaces/IPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mono/metadata/ide_messaging_meta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/ide_messaging_meta.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities/Arthur.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Arthur.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Grass.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Grass.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/DraftBed.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/DraftBed.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/TestScene.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/TestScene.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Arthur.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Arthur.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Grass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Grass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_AttackDown.aseprite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_DraftAttacks.aseprite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_OldBasicAll-export.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_OldBasicAll-export.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_OldBasicAll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_OldBasicAll.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_OldBasicWalks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_OldBasicWalks.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_OldBasicWalks_Two.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_OldBasicWalks_Two.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_WalkDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_WalkDown.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_WalkSide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_WalkSide.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_WalkUp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/Arthur_WalkUp.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/DraftStaticStaffAttacks.aseprite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/DraftStaticStaffAttacks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/DraftStaticStaffAttacks.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/GbColor.aseprite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/WalkingStick_AttachDown.aseprite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/WalkingStick_AttachDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Arthur/WalkingStick_AttachDown.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Flooring/DraftFloor.aseprite" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,9 +70,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Scripts/Interfaces/IPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scripts/Arthur.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/56/903bae8f/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/61/0ab50219/PhysicsBody2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/dd/a95ce0c6/Node2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Scripts/WalkingStick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Enums/Direction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Enums/PlayerState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/39/d5a31904/CollisionObject2D.cs" root0="SKIP_HIGHLIGHTING" />
@@ -55,6 +86,7 @@
     <setting file="file://$PROJECT_DIR$/Extensions/Vector2Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Extensions/ResourceExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/70/0c1daca0/CanvasItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Scripts/Bat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/c3/a663c3ec/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scripts/Grass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scripts/GrassEffect.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,13 +104,16 @@
         <option value="$PROJECT_DIR$/Extensions/Vector2Extensions.cs" />
         <option value="$PROJECT_DIR$/Scripts/Direction.cs" />
         <option value="$PROJECT_DIR$/Entities/WalkingStick.cs" />
-        <option value="$PROJECT_DIR$/Scripts/Grass.cs" />
         <option value="$PROJECT_DIR$/Extensions/ResourceExtensions.cs" />
         <option value="$PROJECT_DIR$/Enums/PlayerState.cs" />
         <option value="$PROJECT_DIR$/Enums/Direction.cs" />
         <option value="$PROJECT_DIR$/Scripts/GrassEffect.cs" />
+        <option value="$PROJECT_DIR$/Scripts/Grass.cs" />
+        <option value="$PROJECT_DIR$/IPlayer.cs" />
+        <option value="$PROJECT_DIR$/Scripts/Interfaces/IPlayer.cs" />
         <option value="$PROJECT_DIR$/Scripts/WalkingStick.cs" />
         <option value="$PROJECT_DIR$/Scripts/Arthur.cs" />
+        <option value="$PROJECT_DIR$/Scripts/Bat.cs" />
       </list>
     </option>
   </component>
@@ -116,6 +151,9 @@
       <workItem from="1603974626439" duration="15042000" />
       <workItem from="1604051339368" duration="8314000" />
       <workItem from="1604263372934" duration="1361000" />
+      <workItem from="1604313572281" duration="599000" />
+      <workItem from="1604776216705" duration="652000" />
+      <workItem from="1604777393123" duration="10516000" />
     </task>
     <servers />
   </component>

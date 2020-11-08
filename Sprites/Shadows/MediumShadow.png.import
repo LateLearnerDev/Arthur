@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Arthur_OldBasicAll-export.png-6d3623f7baa4a93eabf1aeb7d9cad98c.stex"
+path="res://.import/MediumShadow.png-c6e987987665b92d93d6078137052e81.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Arthur/Arthur_OldBasicAll-export.png"
-dest_files=[ "res://.import/Arthur_OldBasicAll-export.png-6d3623f7baa4a93eabf1aeb7d9cad98c.stex" ]
+source_file="res://Sprites/Shadows/MediumShadow.png"
+dest_files=[ "res://.import/MediumShadow.png-c6e987987665b92d93d6078137052e81.stex" ]
 
 [params]
 

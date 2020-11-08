@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Arthur_OldBasicWalks.png-66feb4f91350f83c7b8f8f259c2d5e9a.stex"
+path="res://.import/LargeShadow.png-c3a0550e9df67681bdf106bb8cf02c1e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Arthur/Arthur_OldBasicWalks.png"
-dest_files=[ "res://.import/Arthur_OldBasicWalks.png-66feb4f91350f83c7b8f8f259c2d5e9a.stex" ]
+source_file="res://Sprites/Shadows/LargeShadow.png"
+dest_files=[ "res://.import/LargeShadow.png-c3a0550e9df67681bdf106bb8cf02c1e.stex" ]
 
 [params]
 

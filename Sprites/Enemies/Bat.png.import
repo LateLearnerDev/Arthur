@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Arthur_WalkDown.png-0b52c67cc68d8a61b6da139a4c6371e1.stex"
+path="res://.import/Bat.png-af92fe3eafa8da4d2bf5b72acfecc153.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Arthur/Arthur_WalkDown.png"
-dest_files=[ "res://.import/Arthur_WalkDown.png-0b52c67cc68d8a61b6da139a4c6371e1.stex" ]
+source_file="res://Sprites/Enemies/Bat.png"
+dest_files=[ "res://.import/Bat.png-af92fe3eafa8da4d2bf5b72acfecc153.stex" ]
 
 [params]
 

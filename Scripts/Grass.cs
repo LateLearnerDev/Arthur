@@ -1,7 +1,9 @@
+using ArthurProject;
 using ArthurProject.Extensions;
+using ArthurProject.Scripts.Interfaces;
 using Godot;
 
-public class Grass : Node2D
+public class Grass : Node2D, IDestroyable
 {
     public override void _Ready()
     {
@@ -16,7 +18,7 @@ public class Grass : Node2D
         grassEffect.GlobalPosition = GlobalPosition;
     }
 
-    private void OnHurtBoxAreaEntered(Area2D area)
+    public void OnHurtBoxAreaEntered(Area2D area)
     {
         CreateGrassEffect();
         QueueFree();

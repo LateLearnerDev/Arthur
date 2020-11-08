@@ -28,8 +28,13 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Scripts" t="Include">
         <e p="Arthur.cs" t="Include" />
+        <e p="Bat.cs" t="Include" />
         <e p="Grass.cs" t="Include" />
         <e p="GrassEffect.cs" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IPlayer.cs" t="Include" />
+        </e>
+        <e p="WalkingStick.cs" t="Include" />
       </e>
     </e>
   </component>
