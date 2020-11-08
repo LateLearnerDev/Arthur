@@ -6,7 +6,7 @@ namespace ArthurProject.Scripts
 {
     public class Arthur : KinematicBody2D
     {
-        private int _speed = 1500;
+        [Export] private int _speed = 1500;
         private Vector2 _velocity = Vector2.Zero;
         private AnimationTree _animationTree;
         private AnimationNodeStateMachinePlayback _animationState;
@@ -46,7 +46,7 @@ namespace ArthurProject.Scripts
 
             if (inputVector != Vector2.Zero)
             {
-                _walkingStickHitBox.KnockbackVector = inputVector;
+                SetWalkingStickKnockbackDirection(inputVector);
                 _animationTree.Set("parameters/Idle/blend_position", inputVector);
                 _animationTree.Set("parameters/Walk/blend_position", inputVector);
                 _animationTree.Set("parameters/Attack/blend_position", inputVector);
@@ -64,13 +64,17 @@ namespace ArthurProject.Scripts
             if (Input.IsActionJustPressed("attack"))
                 _state = PlayerState.Attack;
         }
-        
+
+        private void SetWalkingStickKnockbackDirection(Vector2 inputVector)
+        {
+            _walkingStickHitBox.KnockbackVector = inputVector;
+        }
+
         private void Attack()
         {
             
         }
 
-        // Being called in Godot animation player.
         private void AttackAnimationFinish()
         {
             _state = PlayerState.Move;

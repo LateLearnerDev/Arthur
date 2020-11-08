@@ -1,15 +1,8 @@
-using ArthurProject;
 using ArthurProject.Extensions;
-using ArthurProject.Scripts.Interfaces;
 using Godot;
 
-public class Grass : Node2D, IDestroyable
+public class Grass : Node2D
 {
-    public override void _Ready()
-    {
-        
-    }
-
     private void CreateGrassEffect()
     {
         var grassEffect = ResourceLoader.Load("res://Entities/GrassEffect.tscn").GetNode2D();
@@ -23,4 +16,5 @@ public class Grass : Node2D, IDestroyable
         CreateGrassEffect();
         QueueFree();
     }
+
 }

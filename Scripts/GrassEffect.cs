@@ -14,17 +14,6 @@ public class GrassEffect : Node2D
         GD.Print(_lastFrame);
     }
 
-    public override void _Process(float delta)
-    {
-        // if (Input.IsActionPressed("attack"))
-        //     if (_animatedSprite.Frame == _lastFrame ||
-        //         _animatedSprite.Frame == 0)
-        //     {
-        //         _animatedSprite.Frame = 0;
-        //         _animatedSprite.Play("Animate");
-        //     }
-    }
-
     private void OnAnimatedSpriteAnimationFinished()
     {
         QueueFree();
