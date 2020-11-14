@@ -6,12 +6,13 @@ namespace ArthurProject.Scripts
 {
     public class Arthur : KinematicBody2D
     {
-        [Export] private int _speed = 1500;
         private Vector2 _velocity = Vector2.Zero;
         private AnimationTree _animationTree;
         private AnimationNodeStateMachinePlayback _animationState;
         private PlayerState _state;
         private WalkingStick _walkingStickHitBox;
+        
+        [Export] private int _speed = 1500;
         
         public override void _Ready()
         {
@@ -67,7 +68,7 @@ namespace ArthurProject.Scripts
 
         private void SetWalkingStickKnockbackDirection(Vector2 inputVector)
         {
-            _walkingStickHitBox.KnockbackVector = inputVector;
+            _walkingStickHitBox.Knockback = inputVector;
         }
 
         private void Attack()

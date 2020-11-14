@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\rlpov\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\rlpov\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_ArthurProject.-2127900755.00" t="ExcludeRecursive" />
+    <e p="C:\Users\rlpov\AppData\local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rlpov\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\Rider\v202\SolutionCaches\_ArthurProject.-2127900755.00" t="ExcludeRecursive" />
     <e p="Z:\Arthur" t="IncludeRecursive">
       <e p=".mono" t="Include">
         <e p="temp" t="Include">
@@ -18,12 +18,15 @@
       <e p="ArthurProject.sln" t="IncludeFlat" />
       <e p="Collisions" t="Include">
         <e p="HitBox.cs" t="Include" />
+        <e p="HurtBox.cs" t="Include" />
+        <e p="PlayerDetectionZone.cs" t="Include" />
       </e>
       <e p="Composites" t="Include">
         <e p="Stats.cs" t="Include" />
       </e>
       <e p="Enums" t="Include">
         <e p="Direction.cs" t="Include" />
+        <e p="EnemyState.cs" t="Include" />
         <e p="PlayerState.cs" t="Include" />
       </e>
       <e p="Extensions" t="Include">
@@ -31,14 +34,18 @@
         <e p="SpriteFramesExtensions.cs" t="Include" />
         <e p="Vector2Extensions.cs" t="Include" />
       </e>
+      <e p="Global" t="Include">
+        <e p="GodotSignals.cs" t="Include" />
+      </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Scripts" t="Include">
         <e p="Arthur.cs" t="Include" />
         <e p="Bat.cs" t="Include" />
+        <e p="Effect.cs" t="Include" />
         <e p="Grass.cs" t="Include" />
-        <e p="GrassEffect.cs" t="Include" />
         <e p="Interfaces" t="Include">
-          <e p="IPlayer.cs" t="Include" />
+          <e p="IAnimation.cs" t="Include" />
+          <e p="IDestroyable.cs" t="Include" />
         </e>
         <e p="WalkingStick.cs" t="Include" />
       </e>

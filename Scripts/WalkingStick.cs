@@ -1,7 +1,6 @@
 using Godot;
-using System;
 
 public class WalkingStick : HitBox
 {
-    public Vector2 KnockbackVector { get; set; } = Vector2.Zero;
+    public Vector2 Knockback { get; set; } = Vector2.Zero;
 }

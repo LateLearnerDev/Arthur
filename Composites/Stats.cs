@@ -4,14 +4,14 @@ namespace ArthurProject.Composites
 {
     public class Stats : Node
     {
-        [Export] private int MaxHealth { get; set; } = 1;
-        private static int _health;
-        private static bool _isDead => _health <= 0;
+        private int _health;
+        private bool _isDead => _health <= 0;
         internal int Health
         {
             get => _health;
             set => SetHealth(value);
         }
+        [Export] private int MaxHealth { get; set; } = 1;
 
         public override void _Ready()
         {
