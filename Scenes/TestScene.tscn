@@ -192,7 +192,7 @@ position = Vector2( 56, 96 )
 position = Vector2( 96, 40 )
 
 [node name="AnimatedSprite" parent="YSort/Bat" index="0"]
-frame = 0
+frame = 4
 
 [node name="Bat2" parent="YSort" instance=ExtResource( 5 )]
 position = Vector2( 144, 120 )

@@ -49,6 +49,7 @@ namespace ArthurProject.Collisions
         private void OnTimerTimeout()
         {
             GD.Print("Timer Ended");
+            _timer.Stop();
             IsInvincible = false;
         } 
 
