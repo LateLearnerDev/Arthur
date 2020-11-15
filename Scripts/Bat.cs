@@ -17,6 +17,7 @@ namespace ArthurProject.Scripts
         private EnemyState _state = EnemyState.Chase;
         private PlayerDetectionZone _playerDetectionZone;
         private AnimatedSprite _animatedSprite;
+        private HurtBox _hurtBox;
 
         [Export] private int _acceleration { get; set; } = 30;
         [Export] private int _maxSpeed { get; set; } = 20;
@@ -25,11 +26,12 @@ namespace ArthurProject.Scripts
         public override void _Ready()
         {
             _stats = GetNode<Stats>("Stats");
+            _hurtBox = GetNode<HurtBox>("HurtBox");
             _playerDetectionZone = GetNode<PlayerDetectionZone>("PlayerDetectionZone");
             _animatedSprite = GetNode<AnimatedSprite>("AnimatedSprite");
         }
 
-        public override void _Process(float delta)
+        public override void _PhysicsProcess(float delta)
         {
             _knockback = _knockback.MoveToward(Vector2.Zero, _friction * delta);
             _knockback = MoveAndSlide(_knockback);
@@ -50,16 +52,17 @@ namespace ArthurProject.Scripts
             SeekPlayer();
         }
         
+        private void HandleWanderState()
+        {
+            
+        }
+        
         private void HandleChaseState(float delta)
         {
             ChasePlayer(delta);
             _animatedSprite.FlipH = _velocity.x < 0;
         }
         
-        private void HandleWanderState()
-        {
-            
-        }
 
         private void SmoothMovementStop(float delta)
         {
@@ -87,9 +90,9 @@ namespace ArthurProject.Scripts
         public void OnHurtBoxAreaEntered(Area2D area)
         {
             if (!(area is WalkingStick walkingStick)) return;
-            GD.Print($"Damage: {walkingStick.Damage}");
             _knockback = walkingStick.Knockback * _knockbackDistance;
             _stats.Health -= walkingStick.Damage;
+            _hurtBox.CreateHitEffect();
         }
 
         public void OnStatsNoHealth()

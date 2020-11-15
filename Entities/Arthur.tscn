@@ -1,9 +1,11 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://Scripts/Arthur.cs" type="Script" id=1]
 [ext_resource path="res://Sprites/Arthur/Arthur_DraftWalksAndAttacks.png" type="Texture" id=2]
 [ext_resource path="res://Collisions/HitBox.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scripts/WalkingStick.cs" type="Script" id=4]
+[ext_resource path="res://Composites/PlayerStats.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Collisions/HurtBox.tscn" type="PackedScene" id=6]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 2.8262
@@ -478,6 +480,10 @@ graph_offset = Vector2( 0, 95.2461 )
 radius = 5.0
 height = 6.0
 
+[sub_resource type="CapsuleShape2D" id=39]
+radius = 3.0
+height = 6.0
+
 [node name="Arthur" type="KinematicBody2D"]
 collision_layer = 2
 collision_mask = 2147483649
@@ -532,4 +538,16 @@ position = Vector2( 0, 1.66893e-06 )
 shape = SubResource( 38 )
 disabled = true
 
+[node name="PlayerStats" parent="." instance=ExtResource( 5 )]
+
+[node name="HurtBox" parent="." instance=ExtResource( 6 )]
+collision_layer = 32
+
+[node name="CollisionShape2D" parent="HurtBox" index="0"]
+position = Vector2( 0, -5 )
+shape = SubResource( 39 )
+[connection signal="area_entered" from="HurtBox" to="." method="OnHurtboxAreaEntered"]
+
 [editable path="HitboxPivot/WalkingStickHitBox"]
+
+[editable path="HurtBox"]

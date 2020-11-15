@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Sprites/Shadows/SmallShadow.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Enemies/Bat.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scripts/Bat.cs" type="Script" id=4]
 [ext_resource path="res://Composites/Stats.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Collisions/PlayerDetectionZone.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Collisions/HitBox.tscn" type="PackedScene" id=7]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -40,10 +41,13 @@ radius = 4.0
 
 [sub_resource type="CapsuleShape2D" id=8]
 radius = 7.0
-height = 6.0
+height = 4.0
 
 [sub_resource type="CircleShape2D" id=9]
 radius = 53.0094
+
+[sub_resource type="CircleShape2D" id=10]
+radius = 5.0
 
 [node name="Bat" type="KinematicBody2D"]
 collision_layer = 16
@@ -52,7 +56,7 @@ script = ExtResource( 4 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 6 )
 animation = "Fly"
-frame = 1
+frame = 2
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -63,11 +67,12 @@ texture = ExtResource( 1 )
 shape = SubResource( 7 )
 
 [node name="HurtBox" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, -2 )
 collision_layer = 8
 collision_mask = 2147483648
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="HurtBox"]
-position = Vector2( 0, -14 )
+position = Vector2( 0, -13 )
 shape = SubResource( 8 )
 
 [node name="Stats" parent="." instance=ExtResource( 5 )]
@@ -78,7 +83,17 @@ MaxHealth = 2
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
 modulate = Color( 1, 1, 1, 0.470588 )
 shape = SubResource( 9 )
+
+[node name="HitBox" parent="." instance=ExtResource( 7 )]
+collision_layer = 2147483648
+collision_mask = 32
+
+[node name="CollisionShape2D" parent="HitBox" index="0"]
+position = Vector2( 0, -15 )
+shape = SubResource( 10 )
 [connection signal="area_entered" from="HurtBox" to="." method="OnHurtBoxAreaEntered"]
 [connection signal="NoHealth" from="Stats" to="." method="OnStatsNoHealth"]
 
 [editable path="PlayerDetectionZone"]
+
+[editable path="HitBox"]

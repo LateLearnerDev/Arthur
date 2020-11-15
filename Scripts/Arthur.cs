@@ -1,3 +1,5 @@
+using ArthurProject.Collisions;
+using ArthurProject.Composites;
 using ArthurProject.Enums;
 using ArthurProject.Extensions;
 using Godot;
@@ -11,19 +13,26 @@ namespace ArthurProject.Scripts
         private AnimationNodeStateMachinePlayback _animationState;
         private PlayerState _state;
         private WalkingStick _walkingStickHitBox;
-        
-        [Export] private int _speed = 1500;
+        private Stats _stats;
+        private HurtBox _hurtBox;
+
+        [Export] private int _speed = 1800;
         
         public override void _Ready()
         {
+            _stats = GetNode<Stats>("PlayerStats");
+            _stats.Connect("NoHealth", this, nameof(Death));
+            
             _animationTree = GetNode<AnimationTree>("AnimationTree");
             _animationState = (AnimationNodeStateMachinePlayback) _animationTree.Get("parameters/playback");
-            _walkingStickHitBox = GetNode<WalkingStick>("HitboxPivot/WalkingStickHitBox");
-
             _animationTree.Active = true;
+
+            _hurtBox = GetNode<HurtBox>("HurtBox");
+            
+            _walkingStickHitBox = GetNode<WalkingStick>("HitboxPivot/WalkingStickHitBox");
         }
 
-        public override void _Process(float delta)
+        public override void _PhysicsProcess(float delta)
         {
             if (_state == PlayerState.Move)
                 HandleMovementState(delta);
@@ -74,6 +83,18 @@ namespace ArthurProject.Scripts
         private void Attack()
         {
             
+        }
+
+        private void Death()
+        {
+            QueueFree();
+        }
+
+        private void OnHurtboxAreaEntered(Area2D area)
+        {
+            _stats.Health -= 1;
+            _hurtBox.StartInvincibility(1.5f);
+            _hurtBox.CreateHitEffect();
         }
 
         private void AttackAnimationFinish()
