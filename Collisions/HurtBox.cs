@@ -8,7 +8,6 @@ namespace ArthurProject.Collisions
     {
         private readonly PackedScene _hitEffectScene = (PackedScene)ResourceLoader.Load("res://Entities/HitEffect.tscn");
         private Timer _timer;
-        private CollisionShape2D _collision;
         private bool _isInvincible;
         internal bool IsInvincible
         {
@@ -24,7 +23,13 @@ namespace ArthurProject.Collisions
         public override void _Ready()
         {
             _timer = GetNode<Timer>("Timer");
-            _collision = GetNode<CollisionShape2D>("CollisionShape2D");
+        }
+        
+        internal void StartInvincibility(float duration)
+        {
+            IsInvincible = true;
+            _timer.Start(duration);
+            GD.Print("Timer Started");
         }
         
         public void OnHurtBoxAreaEntered(Area2D area)
@@ -36,6 +41,18 @@ namespace ArthurProject.Collisions
         {
             _isInvincible = value;
             EmitSignal(_isInvincible ? nameof(InvincibilityStarted) : nameof(InvincibilityEnded));
+        }
+        
+        private void OnHurtBoxInvincibilityStarted()
+        {
+            /* SetDeferred is called here because we are trying to change a physics property during physics calculations.
+               SetDeferred instead will set monitoring to false at the end of the current game loop. */
+            SetDeferred("monitoring", false);
+        }
+        
+        private void OnHurtBoxInvincibilityEnded()
+        {
+            Monitoring = true;
         }
 
         internal void CreateHitEffect()
@@ -51,27 +68,12 @@ namespace ArthurProject.Collisions
             GD.Print("Timer Ended");
             _timer.Stop();
             IsInvincible = false;
-        } 
-
-        internal void StartInvincibility(float duration)
-        {
-            IsInvincible = true;
-            _timer.Start(duration);
-            GD.Print("Timer Started");
         }
 
-        private void OnHurtBoxInvincibilityStarted()
-        {
-            /* SetDeferred is called here because we are trying to change a physics property during physics calculations.
-               SetDeferred instead will set monitoring to false at the end of the current game loop. */
-            SetDeferred("monitoring", false);
-        }
-        
-        private void OnHurtBoxInvincibilityEnded()
-        {
-            Monitoring = true;
-        }
-        
+
+
+
+
         public void OnStatsNoHealth()
         {
             throw new NotImplementedException();

@@ -18,6 +18,7 @@ namespace ArthurProject.Scripts
         private PlayerDetectionZone _playerDetectionZone;
         private AnimatedSprite _animatedSprite;
         private HurtBox _hurtBox;
+        private SoftCollision _softCollision;
 
         [Export] private int _acceleration { get; set; } = 30;
         [Export] private int _maxSpeed { get; set; } = 20;
@@ -29,6 +30,7 @@ namespace ArthurProject.Scripts
             _hurtBox = GetNode<HurtBox>("HurtBox");
             _playerDetectionZone = GetNode<PlayerDetectionZone>("PlayerDetectionZone");
             _animatedSprite = GetNode<AnimatedSprite>("AnimatedSprite");
+            _softCollision = GetNode<SoftCollision>("SoftCollision");
         }
 
         public override void _PhysicsProcess(float delta)
@@ -42,7 +44,9 @@ namespace ArthurProject.Scripts
                 HandleWanderState();
             else if(_state == EnemyState.Chase)
                 HandleChaseState(delta);
-            
+
+            if (_softCollision.isColliding)
+                _velocity += _softCollision.GetPushVector() * delta * _softCollision.Distance;
             _velocity = MoveAndSlide(_velocity);
         }
 

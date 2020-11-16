@@ -5,7 +5,7 @@
 [ext_resource path="res://Entities/DraftBed.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Entities/Grass.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Entities/Bat.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Dev.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/Dev.cs" type="Script" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -132,6 +132,12 @@ parameters/playback = SubResource( 10 )
 parameters/Attack/blend_position = Vector2( 0, 0 )
 parameters/Idle/blend_position = Vector2( -0.00915754, 0.570539 )
 
+[node name="HurtBox" parent="YSort/Arthur" index="6"]
+collision_layer = 32
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Arthur"]
+remote_path = NodePath("../../../Camera2D")
+
 [node name="Bed" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( 32, 32 )
 
@@ -192,10 +198,13 @@ position = Vector2( 56, 96 )
 position = Vector2( 96, 40 )
 
 [node name="AnimatedSprite" parent="YSort/Bat" index="0"]
-frame = 4
+frame = 0
 
 [node name="Bat2" parent="YSort" instance=ExtResource( 5 )]
-position = Vector2( 144, 120 )
+position = Vector2( 120, 40 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 64, 32 )
 
 [editable path="YSort/Arthur"]
 

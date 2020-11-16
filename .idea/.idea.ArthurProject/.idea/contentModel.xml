@@ -20,6 +20,7 @@
         <e p="HitBox.cs" t="Include" />
         <e p="HurtBox.cs" t="Include" />
         <e p="PlayerDetectionZone.cs" t="Include" />
+        <e p="SoftCollision.cs" t="Include" />
       </e>
       <e p="Composites" t="Include">
         <e p="Stats.cs" t="Include" />
@@ -38,12 +39,10 @@
         <e p="GodotSignals.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Scenes" t="Include">
-        <e p="Dev.cs" t="Include" />
-      </e>
       <e p="Scripts" t="Include">
         <e p="Arthur.cs" t="Include" />
         <e p="Bat.cs" t="Include" />
+        <e p="Dev.cs" t="Include" />
         <e p="Effect.cs" t="Include" />
         <e p="Grass.cs" t="Include" />
         <e p="Interfaces" t="Include">
