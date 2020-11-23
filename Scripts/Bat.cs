@@ -56,8 +56,7 @@ namespace ArthurProject.Scripts
             _velocity = MoveAndSlide(_velocity);
 
         }
-
-        /* STATES */
+        
         private void HandleIdleState(float delta)
         {
             SmoothMovementStop(delta);
@@ -70,7 +69,7 @@ namespace ArthurProject.Scripts
             SeekPlayer();
             SetNextStateIfWanderTimerFinished();
             AccelerateTowardsPoint(_wanderController.TargetPosition, delta);
-            SetNewWanderIfPointReachedBeforeTimerFinished();
+            StopTimerIfPointReached();
         }
         
         private void HandleChaseState(float delta)
@@ -79,7 +78,7 @@ namespace ArthurProject.Scripts
             _animatedSprite.FlipH = _velocity.x < 0;
         }
         
-        /* HELPERS */
+
         private void SmoothMovementStop(float delta)
         {
             _velocity = _velocity.MoveToward(Vector2.Zero, _friction * delta);
@@ -106,14 +105,11 @@ namespace ArthurProject.Scripts
             _animatedSprite.FlipH = _velocity.x < 0;
         }
         
-        private void SetNewWanderIfPointReachedBeforeTimerFinished()
+        private void StopTimerIfPointReached()
         {
             if (GlobalPosition.DistanceTo(_wanderController.TargetPosition) <= WanderCheckRange)
             {
                 _wanderController.StopWanderTimer();
-                SetNextStateIfWanderTimerFinished();
-                _rng.Randomize();
-                _wanderController.StartWanderTimer(_rng.RandfRange(1, 3));
             }
         }
         
