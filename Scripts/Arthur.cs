@@ -15,6 +15,7 @@ namespace ArthurProject.Scripts
         private WalkingStick _walkingStickHitBox;
         private Stats _stats;
         private HurtBox _hurtBox;
+        private AnimationPlayer _blinkAnimationPlayer;
 
         [Export] private int _speed = 1800;
         
@@ -26,6 +27,7 @@ namespace ArthurProject.Scripts
             _animationTree = GetNode<AnimationTree>("AnimationTree");
             _animationState = (AnimationNodeStateMachinePlayback) _animationTree.Get("parameters/playback");
             _animationTree.Active = true;
+            _blinkAnimationPlayer = GetNode<AnimationPlayer>("BlinkAnimationPlayer");
 
             _hurtBox = GetNode<HurtBox>("HurtBox");
             
@@ -90,10 +92,20 @@ namespace ArthurProject.Scripts
             QueueFree();
         }
 
-        private void OnHurtboxAreaEntered(Area2D area)
+        private void OnInvincibilityStarted()
         {
-            _stats.Health -= 1;
-            _hurtBox.StartInvincibility(1.5f);
+            _blinkAnimationPlayer.Play("Start");
+        }
+
+        private void OnInvincibilityEnded()
+        {
+            _blinkAnimationPlayer.Play("Stop");
+        }
+
+        private void OnHurtboxAreaEntered(HitBox hitBox)
+        {
+            _stats.Health -= hitBox.Damage;
+            _hurtBox.StartInvincibility(0.8f);
             _hurtBox.CreateHitEffect();
         }
 
