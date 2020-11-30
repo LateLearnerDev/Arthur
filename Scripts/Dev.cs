@@ -13,7 +13,11 @@ namespace ArthurProject.Scripts
             var arthur = _arthur?.Instance() as KinematicBody2D;
             var ySort = GetNode<YSort>("YSort");
             ySort.AddChild(arthur);
-            if (arthur != null) arthur.GlobalPosition = new Vector2(64, 32);
+            if (arthur != null)
+            {
+                arthur.GlobalPosition = new Vector2(64, 32);
+                arthur.ZIndex = 1;
+            }
         }
     }
 }

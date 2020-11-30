@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using ArthurProject.Collisions;
 using ArthurProject.Composites;
 using ArthurProject.Enums;

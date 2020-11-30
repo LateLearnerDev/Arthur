@@ -16,6 +16,7 @@
       </e>
       <e p="ArthurProject.csproj" t="IncludeRecursive" />
       <e p="ArthurProject.sln" t="IncludeFlat" />
+      <e p="Camera2D.cs" t="Include" />
       <e p="Collisions" t="Include">
         <e p="HitBox.cs" t="Include" />
         <e p="HurtBox.cs" t="Include" />
@@ -41,6 +42,7 @@
         <e p="GodotSignals.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="RemoteTransform2D.cs" t="Include" />
       <e p="Scripts" t="Include">
         <e p="Arthur.cs" t="Include" />
         <e p="Bat.cs" t="Include" />

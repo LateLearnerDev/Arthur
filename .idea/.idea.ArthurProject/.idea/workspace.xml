@@ -20,17 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4588d905-3aaa-4a50-9ef3-2c52c1775e99" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArthurProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Debug/ArthurProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ArthurProject.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entities/Arthur.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Arthur.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Bat.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Bat.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/TestScene.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/TestScene.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Arthur.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Arthur.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Bat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Bat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Dev.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Dev.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/56/903bae8f/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Enums/Direction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/87/a386a843/RandomNumberGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/ff/6dd43890/Camera2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Enums/PlayerState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scripts/Interfaces/IAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/9c/04cb3499/GodotMethodAttribute.cs" root0="SKIP_HIGHLIGHTING" />
@@ -104,12 +107,15 @@
         <option value="$PROJECT_DIR$/Collisions/HurtBox.cs" />
         <option value="$PROJECT_DIR$/Collisions/CollisionShape2D.cs" />
         <option value="$PROJECT_DIR$/Collisions/SoftCollision.cs" />
-        <option value="$PROJECT_DIR$/Scripts/Dev.cs" />
         <option value="$PROJECT_DIR$/Tests/Tests.cs" />
         <option value="$PROJECT_DIR$/Extensions/IListExtensions.cs" />
         <option value="$PROJECT_DIR$/Composites/WanderController.cs" />
-        <option value="$PROJECT_DIR$/Scripts/Bat.cs" />
         <option value="$PROJECT_DIR$/Scripts/Arthur.cs" />
+        <option value="$PROJECT_DIR$/Scripts/Bat.cs" />
+        <option value="$PROJECT_DIR$/TestSceneCam.cs" />
+        <option value="$PROJECT_DIR$/RemoteTransform2D.cs" />
+        <option value="$PROJECT_DIR$/Camera2D.cs" />
+        <option value="$PROJECT_DIR$/Scripts/Dev.cs" />
       </list>
     </option>
   </component>
@@ -198,7 +204,9 @@
       <workItem from="1605558175635" duration="2808000" />
       <workItem from="1606039636366" duration="15910000" />
       <workItem from="1606155589904" duration="10700000" />
-      <workItem from="1606326494613" duration="4794000" />
+      <workItem from="1606326494613" duration="5393000" />
+      <workItem from="1606749627838" duration="2010000" />
+      <workItem from="1606754708732" duration="1633000" />
     </task>
     <servers />
   </component>
